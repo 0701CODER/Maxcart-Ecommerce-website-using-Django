@@ -1,0 +1,967 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load cart %}
+{% load custom_filter %}
+<head>
+    <style>
+        .container-fluid{
+            background-color:#dce2e3;
+            font-size:15px;
+            }
+            
+		.card {
+            width: 18rem;
+            height:auto;
+            background-color:#66929a;
+            border: none !important;
+            box-shadow: 15px 20px 20px rgb(red, green, blue), inset 4px 4px white;
+            border-radius: 20px !important;
+            overflow: hidden;
+            justify-content: center;
+            align-items: center;
+			padding:20px;
+           
+        }
+       
+<!--About-->
+
+body{
+    color: #6F8BA4;
+    margin-top:20px;
+}
+.section {
+    padding: 100px 0;
+    position: relative;
+}
+.gray-bg {
+    background-color: #f5f5f5;
+}
+img {
+    max-width: 100%;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+/* About Me 
+---------------------*/
+.about-text h3 {
+  font-size: 45px;
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+@media (max-width: 767px) {
+  .about-text h3 {
+    font-size: 35px;
+  }
+}
+.about-text h6 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+@media (max-width: 767px) {
+  .about-text h6 {
+    font-size: 18px;
+  }
+}
+.about-text p {
+  font-size: 18px;
+  max-width: 450px;
+}
+.about-text p mark {
+  font-weight: 600;
+  color: #20247b;
+}
+
+.about-list {
+  padding-top: 10px;
+}
+.about-list .media {
+  padding: 5px 0;
+}
+.about-list label {
+  color: #20247b;
+  font-weight: 600;
+  width: 88px;
+  margin: 0;
+  position: relative;
+}
+.about-list label:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 11px;
+  width: 1px;
+  height: 12px;
+  background: #20247b;
+  -moz-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -webkit-transform: rotate(15deg);
+  transform: rotate(15deg);
+  margin: auto;
+  opacity: 0.5;
+}
+.about-list p {
+  margin: 0;
+  font-size: 15px;
+}
+
+@media (max-width: 991px) {
+  .about-avatar {
+    margin-top: 30px;
+  }
+}
+
+.about-section .counter {
+  padding: 22px 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+}
+.about-section .counter .count-data {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.about-section .counter .count {
+  font-weight: 700;
+  color: #20247b;
+  margin: 0 0 5px;
+}
+.about-section .counter p {
+  font-weight: 600;
+  margin: 0;
+}
+mark {
+    background-image: linear-gradient(rgba(252, 83, 86, 0.6), rgba(252, 83, 86, 0.6));
+    background-size: 100% 3px;
+    background-repeat: no-repeat;
+    background-position: 0 bottom;
+    background-color: transparent;
+    padding: 0;
+    color: currentColor;
+}
+.theme-color {
+    color: #fc5356;
+}
+.dark-color {
+    color: #20247b;
+}
+
+
+
+<!--Services-->
+ap 4.4.1 included, to get the result that you can see in the preview selection
+
+body{margin-top:20px;}
+
+/* Feature Box
+---------------------*/
+.feature-box-1 {
+  padding: 32px;
+  box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+  margin: 15px 0;
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+  overflow: hidden;
+  -moz-transition: ease all 0.35s;
+  -o-transition: ease all 0.35s;
+  -webkit-transition: ease all 0.35s;
+  transition: ease all 0.35s;
+  top: 0;
+}
+.feature-box-1 * {
+  -moz-transition: ease all 0.35s;
+  -o-transition: ease all 0.35s;
+  -webkit-transition: ease all 0.35s;
+  transition: ease all 0.35s;
+}
+.feature-box-1 .icon {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  background: #fc5356;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 50%;
+  margin-bottom: 22px;
+  font-size: 27px;
+}
+.feature-box-1 .icon i {
+  line-height: 70px;
+}
+.feature-box-1 h5 {
+  color: #20247b;
+  font-weight: 600;
+}
+.feature-box-1 p {
+  margin: 0;
+}
+.feature-box-1:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: auto;
+  right: 0;
+  border-radius: 10px;
+  width: 0;
+  background: #20247b;
+  z-index: -1;
+  -moz-transition: ease all 0.35s;
+  -o-transition: ease all 0.35s;
+  -webkit-transition: ease all 0.35s;
+  transition: ease all 0.35s;
+}
+.feature-box-1:hover {
+  top: -5px;
+}
+.feature-box-1:hover h5 {
+  color: #ffffff;
+}
+.feature-box-1:hover p {
+  color: rgba(255, 255, 255, 0.8);
+}
+.feature-box-1:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  left: 0;
+  right: auto;
+}
+.section {
+    padding: 100px 0;
+    position: relative;
+}
+.section-title {
+    padding-bottom: 45px;
+}
+.section-title h2 {
+    font-weight: 700;
+    color: #20247b;
+    font-size: 45px;
+    margin: 0 0 15px;
+    border-left: 5px solid #fc5356;
+    padding-left: 15px;
+}
+
+<!--Reviews-->
+body{margin-top:20px;
+    padding-top:80px;
+    }
+    .card {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 0px;
+        position: relative;
+        margin-bottom: 1.56rem;
+    }
+    .card {
+        position: relative;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        min-width: 0px;
+        overflow-wrap: break-word;
+        background-color: rgb(248, 248, 248);
+        background-clip: border-box;
+        border: 0px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.57rem;
+    }
+    .bg-primary {
+        background-color: rgb(240, 194, 75) !important;
+    }
+    .mb-9 {
+        margin-bottom: 4.96rem !important;
+    }
+    
+    .card-icon-border-large {
+        width: 100px;
+        height: 100px;
+        margin: -3.06rem auto 0px;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        border: 6px solid;
+        border-radius: 50%;
+        font-size: 1.88rem;
+        line-height: 90px;
+        color: rgb(102, 102, 102);
+    }
+    .mtn-80 {
+        margin-top: -5rem !important;
+    }
+    .border-primary {
+        border-color: rgb(240, 194, 75) !important;
+    }
+    
+    .text-primary {
+        color: rgb(240, 194, 75) !important;
+    }
+    
+    .bg-success {
+        background-color: rgb(181, 213, 106) !important;
+    }
+    .border-success {
+        border-color: rgb(181, 213, 106) !important;
+    }
+    .text-success {
+        color: rgb(181, 213, 106) !important;
+    }
+    
+    .bg-danger {
+        background-color: rgb(234, 112, 102) !important;
+    }
+    .border-danger {
+        border-color: rgb(234, 112, 102) !important;
+    }
+    .text-danger {
+        color: rgb(234, 112, 102) !important;
+    }
+    
+    .bg-info {
+        background-color: rgb(132, 190, 214) !important;
+    }
+    .border-info {
+        border-color: rgb(132, 190, 214) !important;
+    }
+    .text-info {
+        color: rgb(132, 190, 214) !important;
+    }
+    
+    
+    .bg-purple {
+        background-color: rgb(165, 151, 231) !important;
+    }
+    .border-purple {
+        border-color: rgb(165, 151, 231) !important;
+    }
+    .text-purple {
+        color: rgb(165, 151, 231) !important;
+    }
+    
+    
+    .bg-pink {
+        background-color: rgb(234, 119, 173) !important;
+    }
+    .border-pink {
+        border-color: rgb(234, 119, 173) !important;
+    }
+    .text-pink {
+        color: rgb(234, 119, 173) !important;
+    }
+    
+<!--footer-->
+
+body {
+    margin-top: 20px;
+}
+
+.footer .footer-socila-icon a {
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #F84E77;
+    color: #ffffff;
+    border-radius: 50%;
+    margin-right: 8px;
+    font-size: 15px;
+}
+
+.footer .footer-socila-icon a:hover {
+    background: #1baaa0;
+}
+
+.footer .footer-links {
+    margin: 0;
+}
+
+.footer .footer-links li+li {
+    padding-top: 10px;
+}
+
+.footer .footer-links li a {
+    position: relative;
+}
+
+.footer .footer-links li a:after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    transition: ease all 0.35s;
+    background: #F84E77;
+}
+
+.footer .footer-links li a:hover:after {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+.footer .footer-top {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.footer .footer-top h5,
+.footer .footer-top .h5 {
+    position: relative;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .footer .footer-top {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .footer .footer-top {
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+}
+
+.footer .footer-border-top {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer .footer-border-top.dark {
+    border-top: 1px solid rgba(16, 16, 16, 0.1);
+}
+
+.footer .footer-border-bottom {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer .footer-border-bottom.dark {
+    border-bottom: 1px solid rgba(16, 16, 16, 0.1);
+}
+
+.bg-dark-gradient {
+    background: linear-gradient( 180deg, #101010 50%, black 100%) repeat-x !important;
+}
+
+.white-link a {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+a {
+    text-decoration: none
+}
+
+.avatar-lg img {
+   width:90px;
+   height:90px;
+}
+
+    </style>
+	
+</head>
+<!-- body -->
+<div class="container-fluid mt-3">
+	<div class="row">
+
+
+		<!-- filter -->
+
+		<div class="col-lg-3 mx-auto">
+			<div class="list-group">
+
+				<a href="/" class="list-group-item list-group-item-action btn btn-outline-success">All Products</a>
+
+				{% for category in categories %}
+				<a href="/?category={{category.id}}"
+					class="list-group-item list-group-item-action btn btn-outline-primary ">{{category.name}}</a>
+				{% endfor %}
+			</div>
+		</div>
+
+		<!-- all products -->
+		<div id='products' class="col-lg-9 mx-auto">
+			<div class="row mx-auto">
+				{% for product in products %}
+				<div class="card mx-auto mb-3" id={{product.id}} style="width: 18rem;">
+					<img class="card-img-top" src="{{product.image.url}}" alt="Card image cap" >
+					<div class="card-body">
+						<p class="card-title">{{product.name}}</p>
+						<p class="card-text"><b>{{product.price|currency}}</b></p>
+						<!-- {{product | is_in_cart:request.session.cart }} -->
+					</div>
+
+					<div class="card-footer p-0 no-gutters">
+
+						{% if product|is_in_cart:request.session.cart %}
+						<div class="row no-gutters">
+							<form action="/#{{product.id}}" class="col-2 " method="post">
+								{% csrf_token %}
+								<input hidden type="text" name='product' value='{{product.id}}'>
+								<input hidden type="text" name='remove' value='True'>
+								<input type="submit" value=" - " class="btn btn-block btn-success border-right">
+							</form>
+							<div class="text-center col btn btn-success">{{product|cart_quantity:request.session.cart}} in Cart</div>
+							<form action="/#{{product.id}}" class="col-2 " method="post">
+								{% csrf_token %}
+								<input hidden type="text" name='product' value='{{product.id}}'>
+								<input type="submit" value=" + " class="btn btn-block btn-success border-left">
+							</form>
+						</div>
+						{% else %}
+						<form action="/#{{product.id}}" method="POST" class="btn-block">
+							{% csrf_token %}
+							<input hidden type="text" name='product' value='{{product.id}}'>
+							<input type="submit" class="float-right btn btn-success form-control"
+								value="Add To Cart">
+						</form>
+						{% endif %}
+
+					</div>
+
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--About-->
+<section class="section about-section gray-bg" id="about">
+    <div class="container">
+        <div class="row align-items-center flex-row-reverse">
+            <div class="col-lg-6">
+                <div class="about-text go-to">
+                    <h3 class="dark-color">About MaxCart</h3>
+                    <h6 class="theme-color lead">A Lead Shopping Cart &amp; It's a smart cart that guides shoppers through the supermarket, serving as an intelligent shopping assistant and guide, providing personalized recommendations ...</h6>
+                    <p>I <mark>design and develop</mark> services for customers of all products, specializing in inovating stylish, web products and online stores.
+                         Our passion is to design  user experiences through the bold interface and meaningful interactions.</p>
+                    <div class="row about-list">
+                        <div class="col-md-6">
+                            <div class="media">
+                                <label>Launch</label>
+                                <p>27th May 2001</p>
+                            </div>
+                            <div class="media">
+                                <label>Owner</label>
+                                <p>Vasanth</p>
+                            </div>
+                            <div class="media">
+                                <label>Residence</label>
+                                <p>Canada</p>
+                            </div>
+                            <div class="media">
+                                <label>Address</label>
+                                <p>California, USA</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="media">
+                                <label>E-mail</label>
+                                <p>maxcartinfo@domain.com</p>
+                            </div>
+                            <div class="media">
+                                <label>Phone</label>
+                                <p>820-885-3321</p>
+                            </div>
+                            <div class="media">
+                                <label>Twitter</label>
+                                <p>twitter.0404</p>
+                            </div>
+                            <div class="media">
+                                <label>Freelance</label>
+                                <p>Available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-avatar">
+                    <img src="https://bootdey.com/img/Content/avatar/avatar7.png" title="" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="counter">
+            <div class="row">
+                <div class="col-6 col-lg-3">
+                    <div class="count-data text-center">
+                        <h6 class="count h2" data-to="500" data-speed="500">100000</h6>
+                        <p class="m-0px font-w-600">Happy Customers</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="count-data text-center">
+                        <h6 class="count h2" data-to="150" data-speed="150">11500K</h6>
+                        <p class="m-0px font-w-600">Product Reach</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="count-data text-center">
+                        <h6 class="count h2" data-to="850" data-speed="850">5.5M</h6>
+                        <p class="m-0px font-w-600">Customer interactions.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="count-data text-center">
+                        <h6 class="count h2" data-to="190" data-speed="190">7.7/10</h6>
+                        <p class="m-0px font-w-600">Our Ratings</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Services-->
+<br>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+<section class="section services-section" id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="section-title">
+                    <h2>Services</h2>
+                    <p> It possible for customers to select products and buy them online and develop services for customers of all sizes, specializing in inovating stylish..</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- feaure box -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="feature-box-1">
+                    <div class="icon">
+                        <i class="fa fa-desktop"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h5>Unique design</h5>
+                        <p>a customer could browse, grab a product off the shelf, and head to the checkout counter to make a purchase..</p>
+                    </div>
+                </div>
+            </div>
+            <!-- / -->
+            <!-- feaure box -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="feature-box-1">
+                    <div class="icon">
+                        <i class="fa fa-user"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h5>Innovations</h5>
+                        <p>Selling online for years, the right shopping cart solution can help increase conversions and build a loyal customer base..</p>
+                    </div>
+                </div>
+            </div>
+            <!-- / -->
+            <!-- feaure box -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="feature-box-1">
+                    <div class="icon">
+                        <i class="fa fa-comment"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h5>Make it Simple</h5>
+                        <p>Display the number of items in the cart..
+                            Let people know when they add items to their cart..
+                           </p>
+                    </div>
+                </div>
+            </div>
+            <!-- / -->
+            <!-- feaure box -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="feature-box-1">
+                    <div class="icon">
+                        <i class="fa fa-image"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h5>Responsiveness</h5>
+                        <p> Provide information about free shipping. ...
+                            Lead customers to checkout...</p>
+                    </div>
+                </div>
+            </div>
+            <!-- / -->
+            <!-- feaure box -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="feature-box-1">
+                    <div class="icon">
+                        <i class="fa fa-th"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h5>Perfection</h5>
+                        <p>An online shopping cart allows them to select products on their computer or mobile device and store them in a virtual cart. From here, 
+                            they can make their purchase..</p>
+                    </div>
+                </div>
+            </div>
+            <!-- / -->
+            <!-- feaure box -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="feature-box-1">
+                    <div class="icon">
+                        <i class="fa fa-cog"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h5>Advanced Options</h5>
+                        <p>I design and develop services for customers of all variety of products, specializing in stylish, Modern Online Shopping.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- / -->
+        </div>
+    </div>
+</section>
+
+<!--Reviews-->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<section class="section reviews-section" id="pills-tabContent">
+    <div class="section-title">
+        <h2>Reviews</h2>
+        <p> Website was user-friendly, making it easy to find the perfect item. The checkout process was smooth, and I received my order promptly.</p>
+    </div>
+<div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-4">
+        <div class="card bg-primary card-hover mb-9">
+          <div class="card-body text-center px-md-5 px-lg-6 my-2">
+            <div class="card-icon-border-large border-primary mtn-80">
+              <i class="fa fa-quote-left text-primary" aria-hidden="true"></i>
+            </div>
+            <blockquote class="blockquote blockquote-sm mt-2">
+              <p class="font-normal mb-5"> Very good experience by purchasing with MaxCart.com I order bulk prepaid order i got the prodcts in time.</p>
+              <footer class="blockquote-footer text-uppercase text-white"> James Smith <cite class="d-block text-capitalize font-size-14 opacity-80 mt-1" title="Source Title">Mary’s Father</cite></footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card bg-success card-hover mb-9">
+          <div class="card-body text-center px-md-5 px-lg-6 my-2">
+            <div class="card-icon-border-large border-success mtn-80">
+              <i class="fa fa-quote-left text-success" aria-hidden="true"></i>
+            </div>
+            <blockquote class="blockquote blockquote-sm mt-2">
+              <p class="font-normal mb-5"> Very beautiful Dresses and quality. Very good prices, fast service. And always with their gift. Thank you MaxCart.</p>
+              <footer class="blockquote-footer text-uppercase text-white"> David Smith <cite class="d-block text-capitalize font-size-14 opacity-80 mt-1" title="Source Title">Susan’s Father</cite></footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card bg-danger card-hover mb-9">
+          <div class="card-body text-center px-md-5 px-lg-6 my-2">
+            <div class="card-icon-border-large border-danger mtn-80">
+              <i class="fa fa-quote-left text-danger" aria-hidden="true"></i>
+            </div>
+            <blockquote class="blockquote blockquote-sm mt-2">
+              <p class="font-normal mb-5"> Such a great experience at MaxCart. According to me after visiting MaxCart i think it's quality is unbeatable.</p>
+              <footer class="blockquote-footer text-uppercase text-white">William Smith <cite class="d-block text-capitalize font-size-14 opacity-80 mt-1" title="Source Title">Karen’s Father</cite></footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card bg-info card-hover mb-9">
+          <div class="card-body text-center px-md-5 px-lg-6 my-2">
+            <div class="card-icon-border-large border-info mtn-80">
+              <i class="fa fa-quote-left text-info" aria-hidden="true"></i>
+            </div>
+            <blockquote class="blockquote blockquote-sm mt-2">
+              <p class="font-normal mb-5">  I am very happy with the products and I purchased from the store. It was quite convenient and we were supported extraordinarily.</p>
+              <footer class="blockquote-footer text-uppercase text-white">Daniel Smith <cite class="d-block text-capitalize font-size-14 opacity-80 mt-1" title="Source Title">Lisa’s Father</cite></footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card bg-purple card-hover mb-9">
+          <div class="card-body text-center px-md-5 px-lg-6 my-2">
+            <div class="card-icon-border-large border-purple mtn-80">
+              <i class="fa fa-quote-left text-purple" aria-hidden="true"></i>
+            </div>
+            <blockquote class="blockquote blockquote-sm mt-2">
+              <p class="font-normal mb-5"> From the moment I have ordered it online the moment have been nothing short of excellent.
+                The set arrived in well condition.</p>
+              <footer class="blockquote-footer text-uppercase text-white"> Mike Jones <cite class="d-block text-capitalize font-size-14 opacity-80 mt-1" title="Source Title">Linda’s Father</cite></footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card bg-pink card-hover mb-9">
+          <div class="card-body text-center px-md-5 px-lg-6 my-2">
+            <div class="card-icon-border-large border-pink mtn-80">
+              <i class="fa fa-quote-left text-pink" aria-hidden="true"></i>
+            </div>
+            <blockquote class="blockquote blockquote-sm mt-2">
+              <p class="font-normal mb-5"> The quality of the material used is outstanding, Its  delivery makes more efficient, and provides very friendly service..</p>
+              <footer class="blockquote-footer text-uppercase text-white">Nicholas <cite class="d-block text-capitalize font-size-14 opacity-80 mt-1" title="Source Title">Donna’s Father</cite></footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Footer-->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+<script
+src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+
+<footer class="bg-dark-gradient footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="footer-border-bottom pb-6 mb-5">
+                <div class="row">
+                    <div class="col-lg-4 col-xl-3">
+                        <h4 class="text-white">
+                            Sign up to Get Latest Updates
+                        </h4>
+                    </div>
+                    <div class="col-lg-4 col-xl-6">
+                        <form action="mailto:contact@yourdomain.com" method="POST" enctype="text/plain" name="EmailForm" class="d-flex flex-row mb-2 p-1 bg-white input-group">
+                            <input type="email" class="form-control rounded-0 border-0" placeholder="you@yoursite.com">
+                            <button class="btn btn-secondary rounded-0 flex-shrink-0" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-4 col-xl-3">
+                        <div class="text-lg-end text-white">
+                            <span class="h6">Call Us On</span><br>
+                            <span class="h3">1-800-222-000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-lg-3 my-4">
+                    <div class="text-white-65 mb-4">Customers to select products and buy them online.
+                             In a brick-and-mortar setting, a customer could browse, grab a product off the shelf,
+                              and head to the checkout counter to make a purchase..</div>
+                    <div class="nav footer-socila-icon">
+                        <a href="#">
+<i class="fab fa-facebook-f"></i>
+</a>
+                        <a href="#">
+<i class="fab fa-twitter"></i>
+</a>
+                        <a href="#">
+<i class="fab fa-instagram"></i>
+</a>
+                        <a href="#">
+<i class="fab fa-linkedin-in"></i>
+</a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-2 my-4">
+                    <h5 class="text-white h6 mb-4">Customer</h5>
+                    <ul class="list-unstyled white-link footer-links">
+                        <li>
+                            <a href="#">Get Updates</a>
+                        </li>
+                        <li>
+                            <a href="#">Sales</a>
+                        </li>
+                        <li>
+                            <a href="#">Help center</a>
+                        </li>
+                        <li>
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-2 my-4">
+                    <h5 class="text-white h6 mb-4">Product</h5>
+                    <ul class="list-unstyled white-link footer-links">
+                        <li>
+                            <a href="#">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Join our team</a>
+                        </li>
+                        <li>
+                            <a href="#">Elements</a>
+                        </li>
+                        <li>
+                            <a href="#">Products</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-2 my-4">
+                    <h5 class="text-white h6 mb-4">Company</h5>
+                    <ul class="list-unstyled white-link footer-links">
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#">Legal &amp; Security</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms of use</a>
+                        </li>
+                        <li>
+                            <a href="#">We're hiring!</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-3 my-4">
+                    <h5 class="text-white h6 mb-4">Owners of MaxCart</h5>
+                    <div class="white-link">
+                        <div class="d-flex pb-3">
+                            <div class="avatar avatar-lg rounded">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" title="" alt="">
+                            </div>
+                            <div class="col ps-3">
+                                <small class="text-white-65 "><b>Yasvanth</b> since 1985</small>
+                                <h6 class="font-w-500 h6 m-0"><a class="text-white" href="#">Maxcart the leading online shopping products and variety of collections..</a></h6>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="avatar avatar-lg rounded">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar2.png" title="" alt="">
+                            </div>
+                            <div class="col ps-3">
+                                <small class="text-white-65"><b>Vasanth</b> since 2001</small>
+                                <h6 class="font-w-500 h6 m-0"><a class="text-white" href="#">opportunity comes to you customers so grab on our products...here on Maxcart</a></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom footer-border-top light py-3">
+        <div class="container text-center">
+            <p class="m-0">© 2023 copyright <a href="#" class="text-reset">maxcart</a></p>
+        </div>
+    </div>
+</footer>
+
+{% endblock %}
+
